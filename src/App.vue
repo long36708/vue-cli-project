@@ -24,7 +24,12 @@ export default {
     };
   },
   created() {
-    console.log(`app created ${1.0}`);
+    // version badge
+    console.log(
+      `\n\n %c Vue-APlayer ${1.0} %c vue-aplayer.js.org \n`,
+      "color: #fff; background:#41b883; padding:5px 0;",
+      "color: #fff; background: #35495e; padding:5px 0;"
+    );
   },
 };
 </script>
