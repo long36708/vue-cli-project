@@ -1,10 +1,10 @@
-<comment>
-Author:
-Name:
-Email:
-Github:
-Date:
-</comment>
+<!--<comment>-->
+<!--Author:-->
+<!--Name:-->
+<!--Email:-->
+<!--Github:-->
+<!--Date:-->
+<!--</comment>-->
 
 <template>
   <nav>

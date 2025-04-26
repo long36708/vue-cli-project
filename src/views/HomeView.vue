@@ -14,5 +14,8 @@ export default {
   components: {
     HelloWorld,
   },
+  mounted() {
+    console.log("mounted home view");
+  },
 };
 </script>
