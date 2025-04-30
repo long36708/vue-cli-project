@@ -1,9 +1,12 @@
 const { defineConfig } = require("@vue/cli-service");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 // const isProduction = process.env.NODE_ENV === "production";
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
-  parallel: false, // important!
+  parallel: false, // important
+  productionSourceMap: false,
+  // !
   // chainWebpack(config) {
   //   config.optimization.minimizer("terser").tap((args) => {
   //     args[0].parallel = 4;
@@ -28,6 +31,7 @@ module.exports = defineConfig({
         /* options here */
         extendedPathFileNames: ["index"],
       }),
+      new NodePolyfillPlugin(),
     ],
   },
 });

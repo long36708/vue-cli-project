@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import FinalizationRegistryView from "@/views/FinalizationRegistryView.vue";
-
+import TestBlock from "@/views/TestBlock.vue";
 const routes = [
   {
     path: "/",
@@ -21,6 +21,11 @@ const routes = [
     path: "/finalRegistry",
     name: "FinalizationRegistryView",
     component: FinalizationRegistryView,
+  },
+  {
+    path: "/test-block",
+    name: "TestBlock",
+    component: TestBlock,
   },
 ];
 

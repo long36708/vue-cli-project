@@ -13,6 +13,8 @@
     <router-link to="/about">不打开devtool</router-link>
     |
     <router-link to="/finalRegistry">监听垃圾回收</router-link>
+    |
+    <router-link to="/test-block">测试块中的垃圾回收</router-link>
   </nav>
   <router-view />
 </template>
@@ -26,6 +28,7 @@ export default {
     };
   },
   created() {
+    console.log("应用app");
     // version badge
     console.log(
       `\n\n %c Vue-APlayer ${1.0} %c vue-aplayer.js.org \n`,
